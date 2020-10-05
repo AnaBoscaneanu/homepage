@@ -1,0 +1,317 @@
+/******** TAG SELECTORS********/
+
+body{
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+}
+
+h1, h2, h3, h4, h5, h6{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+}
+
+p{
+    color: #8f8f8f;
+}
+
+
+
+/******** Website common selectors********/
+
+
+.container-fluid{
+    padding: 5% 15%;
+}
+
+.white-section{
+    background-color: #fff;
+}
+.colored-section{
+    background-color: #bed5db;
+}
+
+.heading-big-text{
+    font-size: 5rem;
+    font-weight: 600;
+}
+
+@media (max-width: 991px) {
+    .heading-big-text {
+        font-size: 2.5rem;
+    }
+    .heading-medium{
+        font-size: 1.75rem;
+    }
+    .heading-small-text{
+        font-size: 1.25rem;
+    }
+}
+
+.centered-image{
+    width: 100%;
+    max-width: 350px;
+    height: auto;
+}
+
+.centered-text{
+    padding: 5% 5% 2%;
+    margin: 0;
+}
+
+
+
+/******** Navigation Bar ********/
+
+.navig-menu .container-fluid{
+    padding-bottom: 2%;
+}
+
+.navbar{
+    padding: 0 0 0rem 0;
+}
+
+.navbar-brand{
+    font-size: 1.3rem;
+}
+
+.nav-item{
+    padding: 0 18px;
+    text-align: right;
+}
+
+.nav-link{
+    font-size: 1.3rem;
+    font-weight: 500;
+}
+
+.dropdown-menu{
+    background-color: transparent;
+    border-width: 0px;
+}
+
+.dropdown-item{
+    text-align: right;
+}
+
+
+/******** Title ********/
+
+#title .container-fluid{
+    text-align: left;
+}
+#title .row{
+    padding-top: 4.5rem;
+}
+
+.section-image{
+    background-image: url(images/ionesti1.jpg);
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 25px 0 75px;
+    color:rgb(51, 51, 51);
+}
+
+.architect-name{
+    margin: 30px 0 75px 0;    
+}
+
+.discover-button{
+    margin: 75px 0;
+    font-weight: 500;
+}
+
+/******** Features Section********/
+
+#features .container-fluid{
+    padding: 10% 15%;
+}
+
+.feature-centered{
+    padding-bottom: 30px;
+}
+
+
+/******** Booking a meeting call Section********/
+
+#booking .container-fluid{
+    padding-top: 7%;
+    padding-bottom: 7%;
+}
+
+/******** Footer Section********/
+
+.footer-section{
+    background-color: #fff;
+    padding: 3% 15%;
+}
+
+.footer-icon{
+    width: 30px;
+    margin: 30px 15px ;
+    opacity: 80%;
+}
+
+
+
+/******** Projects Page********/
+
+
+.projects-title.container-fluid{
+    padding: 2% 15%;
+}
+
+#residential .centered-image:hover,
+#comercial .centered-image:hover{
+    opacity: 80%;
+}
+
+
+/******** Individual Project Pages********/
+
+/******** Project Details********/
+
+.project-name{
+    text-align: left;
+    margin-bottom: 30px;
+}
+
+.project-description{
+    text-align: left;
+    padding-right: 5%;
+    margin-bottom: 30px;
+}
+.plan{
+    width: 100%;
+    max-width: 450px;
+    height: auto;
+    margin-bottom: 5%;
+}
+td{
+    padding: 15px 15px 15px 0;
+}
+.content {
+    padding: 30px 0;
+    display: none;
+    overflow: hidden;
+}
+
+/******** Image Slideshow********/
+
+#residential-1 .container-fluid{
+    padding: 0 15%;
+}
+.carousel-image{
+    max-width: 100%;   
+}
+
+
+/******** Contact Me Page********/
+
+.booking{
+    text-align: left;
+    padding-bottom: 5%;
+}
+
+.contact-info{
+    text-align: right;
+}
+
+.heading-contact{
+    font-size: 3rem;
+}
+
+@media(max-width: 991px){
+    .contact-info,
+    .booking{
+        text-align: center;
+    }
+    .heading-contact{
+        font-size: 1.75rem;
+    }
+    .form-elem{
+        text-align: center;
+    }
+}
+
+.contact-details{
+    margin-top: 50px;
+}
+
+
+
+/******** FORM ********/
+
+
+.form-elem{
+    margin-top: 1.2rem;
+    max-width: 450px;
+    width: 100%;
+    display: inline-block;
+}
+
+input{
+    height: 2rem;
+}
+input, 
+textarea{
+    font-size: 1rem;
+    max-width: 450px;
+    width: 100%;
+    box-sizing: border-box;
+    border: 1px solid grey;
+}
+
+textarea{
+    vertical-align: top;
+    height: 9rem;
+}
+
+.booking-button{
+    width: 150px;
+}
+
+/*** validating the form ****/
+
+.error{
+    color: red;
+    text-align: left;
+}
+
+
+/******** About Me Page********/
+
+#about-me{
+    text-align: left;
+}
+
+.profile-image{
+    width: 100%;
+    max-width: 350px;
+    height: auto;
+}
+
+.collapsible{
+    margin: 5% 0;
+}
+
+.values-title{
+    font-size: 3rem;
+    margin-bottom: 7%;
+}
+
+@media(max-width: 991px){
+    #about-me{
+        text-align: center;
+    }
+    .about-me-text{
+        font-size: 1rem;
+    }
+    .content{
+        text-align: left;
+    }
+    .values-title{
+        font-size: 1.75rem;
+    }
+}

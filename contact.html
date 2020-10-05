@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interior Architect Ana Boscaneanu</title>
+    <!--Google Fonts-->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;400;900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap"
+        rel="stylesheet">
+
+    <!--Stylesheets-->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+        integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <section class="white-section navig-menu">
+        <div class="container-fluid">
+
+            <!-- Nav Bar -->
+            <nav class="navbar navbar-expand-lg navbar-light">
+                <a class="navbar-brand" href="index.html">HOME</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse"
+                    data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="projects.html" id="navbarDropdown" role="button"
+                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                Projects
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <a class="dropdown-item" href="projects.html">All</a>
+                                <a class="dropdown-item" href="projects.html#residential">Residential</a>
+                                <a class="dropdown-item" href="projects.html#comercial">Commercial</a>
+                            </div>
+
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="about.html">About Me</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="contact.html">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+
+    </section>
+
+    <!-- Main Section -->
+
+    <section id="contact-me">
+        <div class="container-fluid colored-section">            
+            <div class="row">
+                <div class="col-lg-6 booking">
+                    <h3 class="">Book a meeting</h3>
+                    <form name="contactForm" onsubmit="return validateForm()" action="mailto:ana_boscaneanu@yahoo.com" method="post">
+                        <div class="row form-elem">
+                            <input type="text" name="name" placeholder="Your Name" maxlength="25"><br>
+                            <div class="error" id="nameErr"></div>
+                        </div>
+                        <div class="row form-elem">
+                            <input type="text" name="email" placeholder="Your Email"><br>
+                            <div class="error" id="emailErr"></div>
+                        </div>
+                        <div class="row form-elem">
+                            <input type="date" name="date" id="formDate" min="2020-09-10" onkeydown="return false">
+                            <div class="error" id="dateErr"></div>
+                        </div>
+                        <div class="row form-elem">
+                            <textarea id="msg" name="message" placeholder="Leave a mesagge"></textarea>
+                            <div class="error" id="msgErr"></div>
+                        </div>
+                        <div class="row form-elem">
+                            <button class="btn btn-lg btn-dark booking-button" type="submit">BOOK</button>
+                        </div>               
+                    </form>
+                </div>
+
+                <div class="col-lg-6 contact-info">
+                    <h1 class="heading-contact">Getting in touch is easy!</h1>
+                    <h5>Don't be shy, you can also contact me directly.</h5>                                        
+                    <div class="contact-details">
+                        <h5>My Address</h5>
+                        <p>Östra Storgatan 3, Jönköping</p>           
+                                       
+                        <h5>My Phone Number</h5>
+                        <p>+46 793 374 123</p>                        
+                                        
+                        <h5>My Email</h5>
+                        <p>myemail@gmail.com</p>                        
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <!-- Footer -->
+
+    <footer class="footer-section" id="footer">
+        <div>
+            <a href="https://www.facebook.com/ana.boscaneanu/" target="_blank"><img class="footer-icon" src="images/facebook.png" alt="facebook image link"></a>
+            <a href="https://www.linkedin.com/in/ana-boscaneanu/" target="_blank"><img class="footer-icon" src="images/linkedin.png" alt="linkedin image link"></a>
+            <a href="https://www.instagram.com/anaboscaneanu/" target="_blank"><img class="footer-icon" src="images/instagram.png" alt="instagram image link"></a>
+            <p>© Copyright 2020</p>
+        </div>
+    </footer>
+
+    <!--Bootstrap Scripts-->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous">
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+        integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous">
+    </script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+        integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous">
+    </script>
+    <!--Javascript-->
+    <script src="contact.js"></script>
+</body>
+
+</html>
